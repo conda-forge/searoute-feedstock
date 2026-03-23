@@ -1,5 +1,5 @@
 {% set name = "searoute" %}
-{% set version = "1.4.3" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/searoute-{{ version }}.tar.gz
-  sha256: 003dc67645c4d8b6ad751dc1f155c3782eef95bcd46f1c7b9c7597393749be2a
+  sha256: 0d7f302503869b304f92c5ca6c53497934d412f60b759e1f3615b4cdc1680751
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
